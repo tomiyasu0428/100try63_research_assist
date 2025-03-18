@@ -1,0 +1,5 @@
+openai>=1.40.0
+firecrawl>=0.1.11
+openai-agents>=0.0.4
+streamlit>=1.32.0
+python-dotenv>=1.0.0
