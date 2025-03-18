@@ -1,46 +1,24 @@
-# Deep Research Agent
+Research Agent
+強力なマルチエージェントリサーチシステムで、OpenAI Agents SDK と Firecrawl を使って構築されています。あらゆるトピックに対して包括的なウェブリサーチを行い、複数の情報源を分析し、詳細なレポートを生成します。
 
-A powerful multi-agent research system built using OpenAI Agents SDK and Firecrawl. This application performs comprehensive web research on any topic, analyzing multiple sources and producing in-depth reports.
+特徴
+マルチエージェントアーキテクチャ: Research Agent と Elaboration Agent の 2 つの専門エージェントを使用
+ディープウェブリサーチ: 自動的にウェブを検索し、コンテンツを抽出、調査結果を総合
+高度な分析: 2 番目のエージェントが、初期リサーチに追加のコンテキストを加えて補足
+インタラクティブ UI: 使いやすい Streamlit インターフェース
+ダウンロード可能なレポート: リサーチ結果を Markdown ファイルとしてエクスポート可能
+セットアップ手順
+リポジトリをクローンします:
 
-## Features
+OpenAI にアカウントを作成し、API キーを取得
+Firecrawl にアカウントを作成し、API キーを取得
+.env ファイルにこれらの API キーを追加するか、アプリ上で直接入力
+アプリケーションを実行します:
 
-- **Multi-Agent Architecture**: Uses two specialized agents - Research Agent and Elaboration Agent
-- **Deep Web Research**: Automatically searches the web, extracts content, and synthesizes findings
-- **Enhanced Analysis**: Second agent elaborates on initial research with additional context
-- **Interactive UI**: Clean Streamlit interface for easy interaction
-- **Downloadable Reports**: Export research findings as markdown files
-
-## Setup
-
-1. Clone this repository:
-```
-git clone [repository URL]
-```
-
-2. Install dependencies:
-```
-pip install -r requirements.txt
-```
-
-3. Set up your API keys:
-   - Create an account at [OpenAI](https://platform.openai.com/) and get your API key
-   - Create an account at [Firecrawl](https://www.firecrawl.dev/) and get your API key
-   - Add your API keys to the `.env` file or input them directly in the app
-
-4. Run the application:
-```
-streamlit run deep_research_openai.py
-```
-
-## Usage
-
-1. Enter your OpenAI and Firecrawl API keys in the sidebar (if not already set in `.env`)
-2. Enter a research topic in the main input field
-3. Adjust advanced settings if desired
-4. Click "Start Multi-Agent Research" to begin the process
-5. Wait for the research process to complete
-6. View and download the enhanced research report
-
-## Credits
-
-Inspired by the tutorial from [Unwind AI](https://www.theunwindai.com/p/build-a-deep-research-agent-with-openai-agents-sdk-and-firecrawl)
+使い方
+サイドバーに OpenAI と Firecrawl の API キーを入力（.env にすでに設定している場合は不要）
+メインの入力欄にリサーチトピックを入力
+必要に応じて高度な設定を調整
+「Start Multi-Agent Research」をクリックしてリサーチを開始
+リサーチが完了するのを待機
+強化されたリサーチレポートを確認し、ダウンロード
